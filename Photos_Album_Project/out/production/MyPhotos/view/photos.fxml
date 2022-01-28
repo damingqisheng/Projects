@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhotoController">
+   <children>
+      <Label fx:id="albumNameLB" layoutX="36.0" layoutY="22.0" prefHeight="20.0" prefWidth="502.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TableView fx:id="photoTV" layoutX="36.0" layoutY="190.0" prefHeight="480.0" prefWidth="891.0" />
+      <ImageView fx:id="photoView" fitHeight="421.0" fitWidth="451.0" layoutX="973.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="photoTitleLB" alignment="CENTER" layoutX="1007.0" layoutY="58.0" prefHeight="20.0" prefWidth="346.0" />
+      <Button fx:id="addBtn" layoutX="688.0" layoutY="691.0" mnemonicParsing="false" onAction="#addPhotoHandler" text="Add" />
+      <Button fx:id="rmPhotoBtn" layoutX="753.0" layoutY="691.0" mnemonicParsing="false" onAction="#rmPhotoHandler" text="Remove" />
+      <TextField fx:id="photoPathTF" layoutX="77.0" layoutY="691.0" prefHeight="30.0" prefWidth="390.0" />
+      <Label fx:id="errTipLB" layoutX="36.0" layoutY="736.0" textFill="RED" />
+      <Label layoutX="487.0" layoutY="696.0" text="Title" />
+      <TextField fx:id="titleTF" layoutX="521.0" layoutY="691.0" prefHeight="30.0" prefWidth="156.0" />
+      <Label layoutX="39.0" layoutY="696.0" text="Path" />
+      <Button fx:id="logoutBtn" layoutX="1327.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutHandler" text="logout" />
+      <Label fx:id="dateLB" alignment="CENTER" layoutX="1007.0" layoutY="98.0" prefHeight="20.0" prefWidth="346.0" />
+      <Label fx:id="tagLB" alignment="CENTER" layoutX="1007.0" layoutY="132.0" prefHeight="43.0" prefWidth="346.0" />
+      <Button fx:id="changTitleBtn" layoutX="850.0" layoutY="691.0" mnemonicParsing="false" onAction="#changeBtnHandler" text="Change" />
+      <ComboBox fx:id="tagCB" layoutX="977.0" layoutY="765.0" prefHeight="30.0" prefWidth="112.0" />
+      <TextField fx:id="tagTF" layoutX="1100.0" layoutY="765.0" prefHeight="30.0" prefWidth="170.0" />
+      <Button fx:id="addTagBtn" layoutX="1277.0" layoutY="765.0" mnemonicParsing="false" onAction="#addTagHandler" text="AddTag" />
+      <TextField fx:id="optionTF" layoutX="976.0" layoutY="721.0" prefHeight="30.0" prefWidth="118.0" />
+      <Button fx:id="addOptionBtn" layoutX="1109.0" layoutY="721.0" mnemonicParsing="false" onAction="#addOptionHandler" text="AddTagOption" />
+      <TextField fx:id="timeRangTF" layoutX="88.0" layoutY="78.0" prefHeight="30.0" prefWidth="263.0" promptText="2009-10-1 to 2020-10-1" />
+      <ComboBox fx:id="tag1CB" layoutX="87.0" layoutY="132.0" prefHeight="30.0" prefWidth="133.0" />
+      <TextField fx:id="tag1TF" layoutX="227.0" layoutY="132.0" prefHeight="30.0" prefWidth="216.0" />
+      <ComboBox fx:id="tag2CB" layoutX="568.0" layoutY="132.0" prefHeight="30.0" prefWidth="127.0" />
+      <TextField fx:id="tag2TF" layoutX="711.0" layoutY="132.0" prefHeight="30.0" prefWidth="216.0" />
+      <ComboBox fx:id="andOrCB" layoutX="453.0" layoutY="132.0" prefHeight="30.0" prefWidth="106.0" />
+      <Label layoutX="37.0" layoutY="134.0" prefHeight="20.0" prefWidth="50.0" text="Tags" />
+      <Button fx:id="filterBtn" layoutX="383.0" layoutY="78.0" mnemonicParsing="false" onAction="#fliterPhotoHandler" text="Search" />
+      <Label layoutX="36.0" layoutY="78.0" text="Time" />
+      <Button fx:id="rmTagBtn" layoutX="1362.0" layoutY="765.0" mnemonicParsing="false" onAction="#rmTagHandler" text="RmTag" />
+      <Button fx:id="preBtn" layoutX="1150.0" layoutY="617.0" mnemonicParsing="false" onAction="#prePhotoHandler" text="&lt;&lt;" />
+      <Button fx:id="nextBtn" layoutX="1220.0" layoutY="617.0" mnemonicParsing="false" onAction="#nextPhotoHandler" text="&gt;&gt;" />
+      <ComboBox fx:id="albumCB" layoutX="973.0" layoutY="670.0" prefHeight="30.0" prefWidth="156.0" />
+      <Button fx:id="moveToBtn" layoutX="1151.0" layoutY="670.0" mnemonicParsing="false" onAction="#movePhotoHandler" text="MoveTo" />
+      <Button fx:id="copyToBtn" layoutX="1243.0" layoutY="670.0" mnemonicParsing="false" onAction="#copyPhotoHandler" text="CopyTo" />
+      <Button fx:id="backBtn" layoutX="1169.0" layoutY="23.0" mnemonicParsing="false" onAction="#backToAlbumsHandler" text="Back To Albums" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="33.0" layoutY="62.0" text="Welcome to MyPhotos!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="190.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTF" layoutX="67.0" layoutY="224.0" promptText="UserName" />
+      <Button fx:id="loginBtn" layoutX="146.0" layoutY="270.0" mnemonicParsing="false" onAction="#userLoginHandler" text="OK" />
+      <Label fx:id="errTipLB" layoutX="67.0" layoutY="275.0" textFill="RED" />
+   </children>
+</AnchorPane>
